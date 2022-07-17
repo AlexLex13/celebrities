@@ -7,7 +7,7 @@ from forms import LoginForm, RegisterForm
 from admin.admin import admin
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'a2f531d8eb2dad2dfd140bba79d9a64dfa805aea'
+app.config['SECRET_KEY'] = ''
 app.register_blueprint(admin, url_prefix='/admin')
 MAX_CONTENT_LENGTH = 1024 * 1024
 dbase = None
